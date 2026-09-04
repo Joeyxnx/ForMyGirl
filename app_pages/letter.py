@@ -16,7 +16,6 @@ else:
         st.markdown(
             content.LETTER.format(
                 name=content.HER_NAME,
-                her=content.HER_NAME,
                 me=content.MY_NAME,
             )
         )

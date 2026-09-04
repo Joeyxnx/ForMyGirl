@@ -37,10 +37,11 @@ if st.button("Press me 🎈", type="primary", width="stretch"):
     st.toast(f"Te amo, {content.HER_NAME} 🤍", icon="🩷")
 
 with st.container(border=True):
-    st.markdown("#### Our completely accurate statistics")
+    st.markdown("#### The numbers")
     for label, value, note in content.STATS:
         row = st.container(horizontal=True, vertical_alignment="center")
-        row.markdown(f"**{value.format(days=days)}** &nbsp; {label}")
+        shown = value.format(days=days, months=f"{months:.1f}", met=content.MET_LABEL)
+        row.markdown(f"**{shown}** &nbsp; {label}")
         row.space("stretch")
         row.caption(note)
 

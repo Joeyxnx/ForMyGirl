@@ -5,61 +5,61 @@ from datetime import date
 # ---------------------------------------------------------------------------
 # EDIT ME
 # ---------------------------------------------------------------------------
-HER_NAME = "Olivia"           # <- her name
-MY_NAME = "Joey"            # <- your name
-START_DATE = date(2026, 6, 4)  # <- the day you two became official
+HER_NAME = "Olivia"
+MY_NAME = "Joey"
+START_DATE = date(2026, 6, 4)   # the day you became official
+MET_LABEL = "February 2026"     # when you first met / first date
 HER_EMOJI = "🇵🇹"
 # ---------------------------------------------------------------------------
 
 REASONS = [
-    "The way you say my name with that little Portuguese accent.",
-    "You get loud about Ronaldo and I get to watch you be happy. That's the whole reason I watch football now.",
-    "You explain people to me like a psych textbook with a heartbeat, and you're right almost every time.",
-    "You make plans for us six months out like it's obvious that I'll still be here. I love that you're right.",
-    "You eat tacos like it's a religious experience.",
-    "Your laugh. The real one, not the polite one. I've learned the difference.",
-    "You text me things at 2am that you think are silly and they're my favourite part of the day.",
-    "You have this thing where you're kind to people who can't do anything for you.",
-    "The playlist you made me. I know every Bad Bunny lyric now, phonetically, badly, and with confidence.",
-    "You remember tiny things I said once and bring them back weeks later.",
-    "Saudade. You taught me the word and then made sure I'd feel it every time you're not here.",
-    "You're the only person who can make an airport at 6am sound like a good idea.",
-    "You argue with me about the dumbest things and then hold my hand two minutes later.",
-    "You've made three months feel both like a week and like I've known you forever.",
+    "You're the first person I want to tell things to.",
+    "You listen properly. Not waiting-for-your-turn listening. Actual listening.",
+    "You make ordinary days feel like something.",
+    "You laugh at my jokes. Including the bad ones. Especially the bad ones.",
+    "You're kind to people who can't do anything for you.",
+    "You care about what you're studying, and it shows every time you talk about it.",
+    "Time goes strange around you. Hours feel like minutes.",
+    "You make plans with me in them.",
+    "You're easy to be around. That sounds like a small thing. It isn't.",
+    "Three months in and my phone lighting up with your name is still the best part of my day.",
+    "I like who I am when I'm with you.",
+    "You've never once made me feel like too much, or not enough.",
+    "The more I get to know you, the more I like you. That keeps happening.",
+    "You feel like the easiest decision I've ever made.",
 ]
 
 MILESTONES = [
-    ("Month 0", "The day we met", "I remember exactly what you were wearing and exactly how bad I was at being normal about it."),
-    ("Month 1", "First real date", "We stayed way too long. The staff were definitely closing up around us."),
-    ("Month 2", "The one where it got serious", "Somewhere in here I stopped calling it 'seeing someone'."),
-    ("Month 3", "Today", "Three months of you. Best three months on record."),
+    (MET_LABEL, "The day we met", "Our first date. Everything else started here."),
+    ("June 4, 2026", "Official", "The day we stopped calling it anything else."),
+    ("Today", "Three months", "Three months of you. I'd like a lot more of them."),
 ]
 
-# Fun made-up stats. Change the numbers to whatever is funnier for you two.
+# Values can use {days}, {months}, and {met}.
 STATS = [
-    ("Days together", "{days}", "and counting"),
-    ("Arguments about Ronaldo vs everyone", "∞", "you always win"),
-    ("Tacos consumed", "247", "conservative estimate"),
-    ("Bad Bunny songs added to my library", "63", "you did this to me"),
-    ("Times I've been told I'm 'avoidantly attached'", "4", "you're a psych major, it's fine"),
+    ("Days together", "{days}", "since June 4"),
+    ("Months official", "{months}", "and counting"),
+    ("Known you since", "{met}", "our first date"),
+    ("Places on our list", "6", "see the travel page"),
+    ("Days I'd do again", "{days}", "all of them"),
 ]
 
 DREAM_TRIPS = [
-    ("Lisbon", "🇵🇹", "You show me where you're from. I pretend I can pronounce anything."),
-    ("Madeira", "⚽", "Ronaldo's island. I know. I've been briefed."),
-    ("Mexico City", "🌮", "Street tacos at 1am, no plan, no reservations."),
-    ("Puerto Rico", "🐰", "Bad Bunny's island. We find the beach he sings about."),
-    ("Porto", "🍷", "Port wine and those tiled buildings you always send me."),
-    ("Tulum", "🏝️", "Cenotes, no phones, nothing to do but each other."),
+    ("Lisbon", "🇵🇹", "Where you're from. Top of the list, obviously."),
+    ("Porto", "🍷", "The tiles, the bridge, the river. And the port wine."),
+    ("Madeira", "⚽", "Beautiful island. Also Ronaldo's. Both good reasons."),
+    ("Mexico City", "🌮", "For the food alone. We'd eat our way across it."),
+    ("Puerto Rico", "🐰", "Beaches, and the right soundtrack for them."),
+    ("Tulum", "🏝️", "Cenotes, warm water, nothing on the schedule."),
 ]
 
 MENU = [
-    ("Birria tacos", "The consommé dip. Non-negotiable."),
-    ("Elote", "Messy. Worth it."),
-    ("Al pastor", "The one you order and then steal mine too."),
-    ("Churros", "Dessert. Always dessert."),
-    ("Pastéis de nata", "Your entry, obviously. Cinnamon on top."),
-    ("Francesinha", "Your dare. I'll try it. Once."),
+    ("Birria tacos", "The one with the dip."),
+    ("Al pastor", "Never a bad call."),
+    ("Elote", "Messy in the best way."),
+    ("Churros", "Dessert, sorted."),
+    ("Pastéis de nata", "Portugal's entry. Cinnamon on top."),
+    ("Francesinha", "Porto's finest. On the list to try."),
 ]
 
 QUIZ = [
@@ -67,58 +67,55 @@ QUIZ = [
         "q": "How long have we been together today?",
         "options": ["3 weeks", "3 months", "3 years", "Time is a construct"],
         "answer": "3 months",
-        "note": "Correct. Happy 3 months, {name}. 🩷",
+        "note": "Correct. Happy 3 months, {name}.",
     },
     {
-        "q": "Who is the greatest of all time?",
-        "options": ["Messi", "Cristiano Ronaldo", "Let's not", "Whoever you say"],
+        "q": "When did we first meet?",
+        "options": ["February", "April", "June", "Feels like forever ago"],
+        "answer": "February",
+        "note": "February. Officially June, but February is where it started.",
+    },
+    {
+        "q": "Who's the greatest of all time?",
+        "options": ["Messi", "Cristiano Ronaldo", "No comment", "Do we have to"],
         "answer": "Cristiano Ronaldo",
-        "note": "I've been trained well. SIUUU.",
+        "note": "I know the correct answer. I've learned.",
     },
     {
-        "q": "What do I order when you say 'just pick for me'?",
-        "options": ["Al pastor", "Birria tacos", "Whatever you were going to order anyway", "A salad"],
-        "answer": "Whatever you were going to order anyway",
-        "note": "Because you always change your mind and I always let you.",
+        "q": "Best food on earth?",
+        "options": ["Mexican", "Italian", "Portuguese", "Whatever's closest"],
+        "answer": "Mexican",
+        "note": "Tacos. Every time.",
     },
     {
-        "q": "Which Bad Bunny album do you put on when you're in a mood?",
-        "options": ["Un Verano Sin Ti", "YHLQMDLG", "Debí Tirar Más Fotos", "All of them, loudly"],
-        "answer": "All of them, loudly",
-        "note": "Our neighbours know. Our neighbours have always known.",
-    },
-    {
-        "q": "According to your psych degree, what's my attachment style?",
-        "options": ["Secure", "Anxious", "Avoidant", "A work in progress"],
-        "answer": "A work in progress",
-        "note": "You said it kindly. That's why it worked.",
+        "q": "Which country am I most excited to see with you?",
+        "options": ["Portugal", "Mexico", "Spain", "All of them"],
+        "answer": "Portugal",
+        "note": "I want to see where you're from.",
     },
     {
         "q": "Where are we going first?",
         "options": ["Lisbon", "Mexico City", "Puerto Rico", "Anywhere, as long as it's us"],
         "answer": "Anywhere, as long as it's us",
-        "note": "Correct answer. But we're going to Lisbon.",
+        "note": "Right answer. Though Lisbon is winning.",
     },
 ]
 
 LETTER = """
 {name},
 
-Three months ago I didn't know that "saudade" was a word, that Madeira was an
-island, or that I would ever willingly argue with a stranger about a footballer.
+Three months today. We actually met back in February, so it's been longer than
+that really, but June 4th is the one we count.
 
-Here's what I've figured out since: you're the best part of my day, every day,
-without you having to do anything special to earn it. You do it anyway. You show
-up with snacks and opinions and that laugh, and somehow a Tuesday becomes a good
-day.
+Here's the honest version. You're the best part of my day, and you don't have to
+do anything for that to be true. I like telling you things. I like hearing about
+your day and your classes and whatever you're overthinking this week. I like that
+everything is better when you're in it.
 
-You spend your whole degree learning why people do what they do. So here's mine,
-in plain terms, no theory needed: I'm in this because being around you is easy,
-and because everything is better when I get to tell you about it after.
+I don't have anything clever to add. Three months in, and I'm still glad every
+single time my phone lights up and it's you.
 
-Three months down. I'd like all the rest of them, please.
-
-Te amo, {her} 🤍
+Here's to a lot more of them.
 
 — {me}
 """
