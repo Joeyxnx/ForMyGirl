@@ -102,20 +102,23 @@ QUIZ = [
 ]
 
 LETTER = """
-{name},
+Dear {name},
 
-Three months today. We actually met back in February, so it's been longer than
-that really, but June 4th is the one we count.
+Hiii babyyy, yes it's me writing, not AI lol.
 
-Here's the honest version. You're the best part of my day, and you don't have to
-do anything for that to be true. I like telling you things. I like hearing about
-your day and your classes and whatever you're overthinking this week. I like that
-everything is better when you're in it.
+Happy 3 months. You are the best person I could have asked for. You are my best
+friend, my lover and my soulmate. I am so lucky to have you in my life. Spending
+time with you is my favourite, no matter what we do, we always have fun.
 
-I don't have anything clever to add. Three months in, and I'm still glad every
-single time my phone lights up and it's you.
+On a more personal level, you make my life so much better, and I don't know where
+I would be if I never met you. Your smile, your confidence to be yourself, your
+shiny eyes and your kindness make my life seem like a dream.
 
-Here's to a lot more of them.
+If I had to start over again, I would choose you in a heartbeat. We make each
+other better, and that will never end.
 
-— {me}
+I love you so much.
+
+Your boyfriend,
+{me}
 """
